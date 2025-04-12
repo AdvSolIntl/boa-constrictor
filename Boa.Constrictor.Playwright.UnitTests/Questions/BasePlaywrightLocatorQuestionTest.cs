@@ -1,4 +1,3 @@
-using Boa.Constrictor.Playwright.Elements;
 using Microsoft.Playwright;
 using Moq;
 using NUnit.Framework;
