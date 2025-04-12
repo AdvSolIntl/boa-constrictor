@@ -1,8 +1,8 @@
-using System.Threading.Tasks;
 using FluentAssertions;
 using Microsoft.Playwright;
 using Moq;
 using NUnit.Framework;
+using System.Threading.Tasks;
 
 namespace Boa.Constrictor.Playwright.UnitTests.Elements
 {

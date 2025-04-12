@@ -1,6 +1,6 @@
 ﻿# Changelog
 
-This file documents all notable changes to the Boa.Constrictor.Xunit project and its unit tests for each NuGet package release.
+This file documents all notable changes to the Boa.Constrictor.Playwright project and its unit tests for each NuGet package release.
 
 Its format is based on Keep a Changelog, and this project adheres to Semantic Versioning.
 
@@ -36,3 +36,4 @@ Its format is based on Keep a Changelog, and this project adheres to Semantic Ve
   - `Enabled`
 - Added an `Expects` extension method to `IActor` to make it easier to use playwrights built in `ILocatorAssertions`
   - e.g. `await MyActor.Expects(WikiPage.Title).ToHaveTextAsync("Giant panda");`
+- Added `IBoaWebLocator` interface and implementation, which can be used to easily convert Selenium IWebLocators into Playwright IPlaywrightLocators
