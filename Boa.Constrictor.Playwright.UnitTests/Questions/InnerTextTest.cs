@@ -1,8 +1,8 @@
-using System.Threading.Tasks;
 using FluentAssertions;
 using Microsoft.Playwright;
 using Moq;
 using NUnit.Framework;
+using System.Threading.Tasks;
 
 namespace Boa.Constrictor.Playwright.UnitTests.Questions;
 
@@ -17,7 +17,7 @@ public class InnerTextTest : BasePlaywrightLocatorQuestionTest
             .Returns(Task.FromResult("Hello"));
 
         // Act
-        var innerText = await Actor.AsksForAsync(InnerText.Of(PlaywrightLocator.Object));
+        var innerText = await Actor.AsksForAsync(InnerText.Of(PlaywrightLocator));
 
         // Assert
         innerText.Should().Be("Hello");

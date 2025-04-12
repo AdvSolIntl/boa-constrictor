@@ -1,8 +1,8 @@
-using System.Threading.Tasks;
 using FluentAssertions;
 using Microsoft.Playwright;
 using Moq;
 using NUnit.Framework;
+using System.Threading.Tasks;
 
 namespace Boa.Constrictor.Playwright.UnitTests.Questions;
 
@@ -17,7 +17,7 @@ public class EnabledTest : BasePlaywrightLocatorQuestionTest
             .Returns(Task.FromResult(false));
 
         // Act
-        var enabled = await Actor.AsksForAsync(Enabled.Of(PlaywrightLocator.Object));
+        var enabled = await Actor.AsksForAsync(Enabled.Of(PlaywrightLocator));
 
         // Assert
         enabled.Should().BeFalse();
